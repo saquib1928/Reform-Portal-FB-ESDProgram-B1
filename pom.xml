@@ -21,6 +21,18 @@
     <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
     <sonar.projectName>Reform-Portal</sonar.projectName>
 	</properties>
+	  <distributionManagement>
+		<repository>
+		  <id>central</id>
+		  <name>a0n5tucjjiuir-artifactory-primary-0-releases</name>
+		  <url>https://ibt.jfrog.io/artifactory/ibt-libs-release</url>
+		</repository>
+		<snapshotRepository>
+		  <id>snapshots</id>
+		  <name>a0n5tucjjiuir-artifactory-primary-0-snapshots</name>
+		  <url>https://ibt.jfrog.io/artifactory/ibt-libs-snapshot</url>
+		</snapshotRepository>
+	  </distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -69,16 +81,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	    <distributionManagement>
-		<repository>
-		  <id>central</id>
-		  <name>a0n5tucjjiuir-artifactory-primary-0-releases</name>
-		  <url>https://ibt.jfrog.io/artifactory/ibt-libs-release</url>
-		</repository>
-		<snapshotRepository>
-		  <id>snapshots</id>
-		  <name>a0n5tucjjiuir-artifactory-primary-0-snapshots</name>
-		  <url>https://ibt.jfrog.io/artifactory/ibt-libs-snapshot</url>
-		</snapshotRepository>
-	  </distributionManagement>
 </project>
